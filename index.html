@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Air Water Ventures</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Spline+Sans:wght@300;400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="awv-bluechip.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="Air Water Ventures">
+      <img class="brandlogo brandlogo-d" src="logo-long.svg" alt="Air Water Ventures">
+      <img class="brandlogo brandlogo-m" src="logo-mobile.png" alt="AWV">
+    </a>
+    <div class="nav-links">
+      <a href="company.html">Company</a>
+      <a href="https://a1rwater.com" target="_blank" rel="noopener">Products</a>
+      <a class="nav-cta" href="https://a1rwater.gcs-web.com/" target="_blank" rel="noopener">Investor Relations</a>
+    </div>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">Menu</button>
+  </div>
+</nav>
+<div class="mobile-drawer" id="drawer">
+  <button class="close" aria-label="Close menu">Close ✕</button>
+  <a href="company.html">Company</a>
+  <a href="https://a1rwater.com" target="_blank" rel="noopener">Products</a>
+  <a href="https://a1rwater.gcs-web.com/" target="_blank" rel="noopener">Investor Relations</a>
+</div>
+
+<!-- hero -->
+<header class="hero-el hero-home" id="top">
+  <div class="wrap">
+    <div class="hero-statement">
+      <p class="eyebrow kick">The company behind <img class="mk" src="a1r-mark-white.png" alt="A1R"></p>
+      <h1 class="statement-h1">The world's first water innovation company</h1>
+      <div class="ctas">
+        <a class="btn btn-royal" href="company.html">Inside the company</a>
+        <a class="btn btn-line" href="https://a1rwater.gcs-web.com/" target="_blank" rel="noopener">Investor relations</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- mission -->
+<section class="editorial" id="mission">
+  <div class="wrap">
+    <div class="colset">
+      <div class="lbl">Our vision</div>
+      <div>
+        <p class="mv-statement" style="font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.34;max-width:30ch;">A world where the sky is the source — where pure, sustainable hydration flows freely without burdening the Earth, and true luxury is defined not by what we take, but by what we protect.</p>
+        <a class="qlink" href="company.html">Our mission &amp; the company →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- product: A1R -->
+<section class="editorial tight" id="product" style="border-top:1px solid var(--line);">
+  <div class="wrap">
+    <div class="feature narrow-text">
+      <div>
+        <p class="eyebrow kick">Our product</p>
+        <img class="logo-head" src="a1r-mark.png" alt="A1R">
+        <p class="lede">A1R is our consumer brand — premium still and sparkling water, born from air, in aluminum and glass.</p>
+        <a class="qlink" href="https://a1rwater.com" target="_blank" rel="noopener">Visit A1R ↗</a>
+      </div>
+      <div class="media">
+        <img src="can-01.jpg" alt="A1R still and sparkling water cans">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- investor relations -->
+<section class="sec royal gateway">
+  <div class="wrap">
+    <p class="eyebrow kick">Investor relations</p>
+    <h2 class="display">Entering the public markets.</h2>
+    <p class="lede">Financials, governance, filings, and news. All on our investor relations site.</p>
+    <div class="ctas"><a class="btn btn-white" href="https://a1rwater.gcs-web.com/" target="_blank" rel="noopener">Visit Investor Relations ↗</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid four">
+      <div>
+        <div class="wm"><img class="footlogo" src="logo-long.svg" alt="Air Water Ventures"></div>
+        <p>4341 W. 108th St., Suite 1<br>Hialeah, FL 33018</p>
+      </div>
+      <div><h4>Explore</h4><a href="company.html">Our Company</a><a href="https://a1rwater.com" target="_blank" rel="noopener">Products (A1R)</a><a href="https://a1rwater.gcs-web.com/" target="_blank" rel="noopener">Investor Relations</a></div>
+      <div><h4>Legal</h4><a href="https://a1rwater.com/privacy-policy/" target="_blank" rel="noopener">Privacy policy</a><a href="https://a1rwater.com/terms-of-use/" target="_blank" rel="noopener">Terms &amp; conditions</a></div>
+      <div><h4>Contact</h4><span class="email">info@a1rwater.com</span><p>General, media &amp; careers</p></div>
+    </div>
+    <p class="legal">FORWARD-LOOKING STATEMENTS: Certain statements on this site are forward-looking and involve risks and uncertainties. Actual results may differ materially. Investors should review the registration statement and documents filed with the SEC at sec.gov.</p>
+    <div class="foot-bottom"><span>© 2026 Air Water Ventures</span><span>Privacy · Terms · Contact</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var d=document.getElementById('drawer'),o=document.querySelector('.menu-btn'),c=d&&d.querySelector('.close');
+  if(!d||!o)return;
+  function open(){d.classList.add('open');o.setAttribute('aria-expanded','true');if(c)c.focus();}
+  function close(){d.classList.remove('open');o.setAttribute('aria-expanded','false');o.focus();}
+  o.addEventListener('click',open);
+  if(c)c.addEventListener('click',close);
+  d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.classList.contains('open'))close();});
+})();
+</script>
+
+</body>
+</html>
