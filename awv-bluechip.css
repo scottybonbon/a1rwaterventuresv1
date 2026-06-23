@@ -285,10 +285,10 @@ footer .wrap{padding:6vh 0 4vh;}
    url('can-07.jpg') center/cover no-repeat,var(--navy);}}
 .hero-company{background:
    linear-gradient(90deg,rgba(5,6,20,.97) 0%,rgba(5,6,20,.82) 38%,rgba(5,6,20,.45) 66%,rgba(5,6,20,.12) 100%),
-   url('company-hero.png') right center/contain no-repeat, var(--navy);}
+   url('company-hero.jpg') right center/contain no-repeat, var(--navy);}
 @media(max-width:760px){.hero-company{background:
    linear-gradient(180deg,rgba(5,6,20,.62) 0%,rgba(5,6,20,.5) 38%,rgba(5,6,20,.92) 100%),
-   url('company-hero.png') center top/cover no-repeat, var(--navy);}}
+   url('company-hero.jpg') center top/cover no-repeat, var(--navy);}}
 .hero-el .wrap{position:relative;z-index:2;width:100%;}
 .hero-el-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center;}
 @media(max-width:860px){.hero-el-grid{grid-template-columns:1fr;}}
